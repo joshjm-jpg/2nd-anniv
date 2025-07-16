@@ -52,16 +52,17 @@ body, html {
   left: 50%;
   transform: translate(-50%, -50%);
   width: 85%;
-  max-width: 360px;
-  height: 280px;
+  max-width: 360px;    /* Slightly narrower */
+  height: 280px;        /* Slightly shorter */
   padding: 20px;
-  background: transparent;     /* 🔹 FULLY transparent */
+  background: rgba(255, 255, 255, 0.6); /* More transparent */
   border-radius: 15px;
   z-index: 2;
   text-align: center;
-  box-shadow: none;            /* 🔹 No box shadow */
+  box-shadow: 0 6px 16px rgba(0,0,0,0.15);
   cursor: pointer;
   overflow-y: auto;
+  backdrop-filter: blur(2px); /* Slight blur to keep text readable */
 }
 
 
